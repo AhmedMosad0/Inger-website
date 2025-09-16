@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+@keyframes ribbon-drift {
+  0%   { transform: translate3d(0,0,0); }
+  50%  { transform: translate3d(-12px, -6px, 0); } /* subtle diagonal float */
+  100% { transform: translate3d(0,0,0); }
+}
+@keyframes ribbon-drift-rev {
+  0%   { transform: translate3d(0,0,0); }
+  50%  { transform: translate3d(12px, 6px, 0); }  /* opposite direction */
+  100% { transform: translate3d(0,0,0); }
+}
+
+.animate-ribbon-drift {
+  animation: ribbon-drift 6s ease-in-out infinite;
+}
+.animate-ribbon-drift-rev {
+  animation: ribbon-drift-rev 6.5s ease-in-out infinite;
+}
