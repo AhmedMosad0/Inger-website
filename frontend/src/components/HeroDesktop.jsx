@@ -7,7 +7,7 @@ export default function HeroDesktop() {
     const title = "STAY TUNED".split("");
     const subtitle = "website is under construction".split("");
     const paragraphWords =
-        "Our website is     currently undergoing maintenance to make your user experience easier and faster, keep tuned for future updates.".split(" ");
+        "Our website is currently undergoing maintenance to make your user experience easier and faster, keep tuned for future updates.".split(" ");
 
     return (
         <div className="relative w-full h-screen overflow-hidden flex items-center justify-center text-center bg-white absolute z-10">
