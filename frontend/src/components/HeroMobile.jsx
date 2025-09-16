@@ -20,7 +20,7 @@ export default function HeroMobile() {
             <MovingLineMobile 
                 lineSrc="/Original-line.png"
                 angle={15}
-                position={{ top: "-20px", left: "-300px" }}
+                position={{ top: "30px", left: "-250px" }}
                 lineWidth="1000px"
                 contents={[
                     { src: "/shorat-png-white.png", size: "1000px", speed: 10, offset: 0, marginTop: 0, marginLeft: 0 },
@@ -30,13 +30,13 @@ export default function HeroMobile() {
 
             <MovingLineMobile
                 lineSrc="/Original-line.png"
-                angle={-15}
-                position={{ top: "-20px", left: "-300px" }}
+                angle={-5}
+                position={{ top: "40px", left: "-250px" }}
                 lineWidth="1000px"
                 contents={[
                     // { src: "/shorat-png-white.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -195, zIndex: 5 },
                     // { src: "/line-ele-fo2-shorat.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -195, zIndex: 8 },
-                    { src: "/text-png-white.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -195, zIndex: 10 },
+                    { src: "/text-png-white.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -1950, zIndex: 10 },
                     // { src: "/shorat-png-white.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -195, zIndex: 5, delay: 5 },
                     // { src: "/line-ele-fo2-shorat.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -195, zIndex: 8, delay: 5 },
                     { src: "/text-png-white.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -195, delay: 5, zIndex: 10 },
@@ -47,7 +47,7 @@ export default function HeroMobile() {
             <MovingLineMobile
                 lineSrc="/Original-line.png"
                 angle={5}
-                position={{ bottom: "-50px", right: "-350px" }}
+                position={{ bottom: "-50px", right: "-250px" }}
                 lineWidth="1000px"
                 contents={[
                     { src: "/shorat-png-white.png", size: "1000px", speed: 10, offset: 0, marginTop: 0, marginLeft: 0 },
@@ -57,7 +57,7 @@ export default function HeroMobile() {
 
             <MovingLineMobile
                 lineSrc="/Original-line.png"
-                angle={-15}
+                angle={-20}
                 position={{ bottom: "-20px", right: "-300px" }}
                 lineWidth="1000px"
                 contents={[
@@ -73,7 +73,7 @@ export default function HeroMobile() {
             {/* Center content - Mobile optimized */}
             <div className="relative z-20 flex flex-col justify-center items-center text-center px-4">
                 {/* Title */}
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight font-sans flex flex-wrap space-x-1 justify-center text-[#4F46E5]">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight font-sans flex flex-wrap space-x-1 justify-center text-[#4F46E5] ">
                     {title.map((char, i) => (
                         <motion.span
                             key={i}
