@@ -21,8 +21,9 @@ export default function HeroDesktop() {
             <MovingLine lineSrc="/Original-line.png"
                 angle={15}
                 position={{ top: "-40px", left: "-650px" }}
-                contents={[{ src: "/shorat-png-white.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0 },
-                { src: "/shorat-png-white.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0, delay: 4 },]}
+                contents={[
+                    { src: "/png-shorat.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0 },
+                    { src: "/png-shorat.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0, delay: 4 },]}
             />
 
 
@@ -31,13 +32,11 @@ export default function HeroDesktop() {
                 angle={-15}
                 position={{ top: "-40px", left: "-650px" }}
                 contents={[
-                    // { src: "/shorat-png-white.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5 },
-                    // { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8 },
-
+                    { src: "/png-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5 },
+                    { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8 },
                     { src: "/text-png-white.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 10, },
-
-                    // { src: "/shorat-png-white.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5, delay: 5 },
-                    // { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8, delay: 5 },
+                    { src: "/png-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5, delay: 5 },
+                    { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8, delay: 5 },
                     {
                         src: "/text-png-white.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, delay: 5, zIndex: 10
                     },
@@ -48,24 +47,24 @@ export default function HeroDesktop() {
             {/* right lines*/}
             <MovingLine
                 lineSrc="/Original-line.png"
-                angle={5}
-                position={{ bottom: "-100px", right: "-750px" }}
+                angle={15}
+                position={{ bottom: "-90px", right: "-650px" }}
                 contents={[
-                    { src: "/shorat-png-white.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0 },
-                    { src: "/shorat-png-white.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0, delay: 4 },
+                    { src: "/png-shorat.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0 },
+                    { src: "/png-shorat.png", size: "1600px", speed: 8, offset: 0, marginTop: 0, marginLeft: 0, delay: 4 },
                 ]}
             />
 
             <MovingLine
                 lineSrc="/Original-line.png"
-                angle={-15}
-                position={{ bottom: "-40px", right: "-650px" }}
+                angle={-5}
+                position={{ bottom: "-40px", right: "-670px" }}
                 contents={[
-                    // { src: "/png-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5 },
-                    // { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8 },
+                    { src: "/png-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5 },
+                    { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8 },
                     { src: "/text-png-white.png", size: "1800px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 10 },
-                    // { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8, delay: 5 },
-                    // { src: "/png-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5, delay: 5 },
+                    { src: "/png-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 5, delay: 5 },
+                    { src: "/line-ele-fo2-shorat.png", size: "3000px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, zIndex: 8, delay: 5 },
                     { src: "/text-png-white.png", size: "1800px", speed: 10, offset: 200, marginTop: -20, marginLeft: -390, delay: 5, zIndex: 10 },
 
                 ]}

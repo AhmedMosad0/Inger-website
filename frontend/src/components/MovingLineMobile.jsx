@@ -7,13 +7,12 @@ function MovingLineMobile({
   angle = 5,
   position,
   zIndex = 10,
-  lineWidth = "1000px", // 👈 Mobile optimized default
+  lineWidth = "1000px",
   lineHeight = "auto",
-  type = "base", // 👈 "base" | "arrow"
+  type = "base",
 }) {
-  const distance = 350; // 👈 Reduced travel distance for mobile screens
+  const distance = 250;
 
-  // ✅ choose line style depending on type
   const baseTransform = `rotate(${angle}deg)`;
   const lineTransform =
     type === "arrow" ? `${baseTransform} scaleX(-1)` : baseTransform;
@@ -47,18 +46,18 @@ function MovingLineMobile({
         className="relative z-10"
       />
 
-      {/* Container for moving contents */}
+      {/* Container for moving contents - removed restrictive clipPath */}
       <div
         className="absolute inset-0 z-20"
         style={{
           overflow: "hidden",
-          transform: baseTransform, // 👈 mask stays in base rotation
+          transform: baseTransform,
           maskImage: "url(" + lineSrc + ")",
-          maskSize: `${lineWidth} auto`,
+          maskSize: "contain",
           maskRepeat: "no-repeat",
           maskPosition: "center",
           WebkitMaskImage: "url(" + lineSrc + ")",
-          WebkitMaskSize: `${lineWidth} auto`,
+          WebkitMaskSize: "contain",
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskPosition: "center",
         }}
@@ -78,21 +77,22 @@ function MovingLineMobile({
               justifyContent: "center",
               width: "100%",
               height: "100%",
+              overflow: "hidden",
             }}
           >
             <motion.img
               src={content.src}
               alt={`moving-content-${i}`}
               style={{
-                width: content.size || "1800px", // 👈 Mobile optimized default
+                width: content.size || "1800px",
                 height: "auto",
                 marginTop: content.marginTop || "0px",
                 marginLeft: content.marginLeft || "0px",
-                zIndex: content.zIndex || 1, // 👈 Added zIndex support for content layering
+                zIndex: content.zIndex || 1,
               }}
               animate={{
-                translateY: [distance * 0.99, -distance * 0.97],
-                translateX: [-distance, distance],
+                translateY: [distance * 0.98, -distance * 0.958], 
+                translateX: [-distance , distance], 
               }}
               transition={{
                 duration: content.speed || speed,

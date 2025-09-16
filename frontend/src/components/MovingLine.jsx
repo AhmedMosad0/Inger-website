@@ -90,7 +90,7 @@ function MovingLine({
                 marginLeft: content.marginLeft || "0px",
               }}
               animate={{
-                translateY: [distance * 0.99, -distance * 0.97],
+                translateY: [distance * 0.985, -distance * 0.965],
                 translateX: [-distance, distance],
               }}
               transition={{
