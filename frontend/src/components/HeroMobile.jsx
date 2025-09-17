@@ -51,7 +51,7 @@ export default function HeroMobile() {
         lineWidth="1000px"
         contents={[
           { src: "/png-shorat.png", size: "1000px", speed: 10, offset: 0, marginTop: 0, marginLeft: 0 },
-          { src: "/png-shorat.png", size: "1000px", speed: 10, offset: 0, marginTop: 0, marginLeft: 0, delay: 4 },
+          { src: "/png-shorat.png", size: "1000px", speed: 10, offset: 0, marginTop: 0, marginLeft: 0, delay: 4.2 },
         ]}
       />
 
