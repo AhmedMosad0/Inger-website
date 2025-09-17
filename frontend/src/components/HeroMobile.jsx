@@ -20,7 +20,7 @@ export default function HeroMobile() {
       <MovingLineMobile
         lineSrc="/Original-line.png"
         angle={15}
-        position={{ top: "-35px", left: "-170px" }}
+        position={{ top: "-38px", left: "-183px" }}
         lineWidth="1000px"
         contents={[
           { src: "/png-shorat.png", size: "1000px", speed: 10, offset: 0, marginTop: 0, marginLeft: 0 },
@@ -47,7 +47,7 @@ export default function HeroMobile() {
       <MovingLineMobile
         lineSrc="/Original-line.png"
         angle={5}
-        position={{ bottom: "30px", right: "-200px" }}
+        position={{ bottom: "30px", right: "-209px" }}
         lineWidth="1000px"
         contents={[
           { src: "/png-shorat.png", size: "1000px", speed: 10, offset: 0, marginTop: 0, marginLeft: 0 },
@@ -57,8 +57,8 @@ export default function HeroMobile() {
 
       <MovingLineMobile
         lineSrc="/Original-line.png"
-        angle={-15}
-        position={{ bottom: "60px", right: "-280px" }}
+        angle={-12}
+        position={{ bottom: "60px", right: "-285px" }}
         lineWidth="1000px"
         contents={[
           { src: "/png-shorat.png", size: "1800px", speed: 10, offset: 100, marginTop: -10, marginLeft: -195, zIndex: 5 },
