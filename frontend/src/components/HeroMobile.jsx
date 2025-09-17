@@ -8,7 +8,7 @@ export default function HeroMobile() {
     "Our website is currently undergoing maintenance to make your user experience easier and faster, keep tuned for future updates.".split(" ");
 
   return (
-    <div className="relative w-full h-[689px] overflow-hidden flex items-center justify-center text-center bg-white absolute z-10">
+    <div className="relative w-full h-screen overflow-hidden flex items-center justify-center text-center bg-white absolute z-10">
       {/* Background */}
       <img
         src="/background-3840×2160.png"
