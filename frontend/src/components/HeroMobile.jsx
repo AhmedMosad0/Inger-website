@@ -8,7 +8,7 @@ export default function HeroMobile() {
     "Our website is currently undergoing maintenance to make your user experience easier and faster, keep tuned for future updates.".split(" ");
 
   return (
-    <div className="relative w-full h-[100dvh] overflow-hidden flex items-center justify-center text-center bg-white fixed inset-0 z-10">
+    <div className="relative w-full h-[100svh] sm:h-[100vh] overflow-hidden flex items-center justify-center text-center bg-white fixed inset-0 z-10">
       {/* Background */}
       <img
         src="/background-3840×2160.png"
@@ -73,7 +73,7 @@ export default function HeroMobile() {
       {/* Center content - Mobile optimized */}
       <div className="relative z-20 flex flex-col justify-center items-center text-center px-4">
         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight font-sans flex flex-wrap space-x-1 justify-center text-[#4F46E5] ">
+        <h1 className="text-5xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight font-sans flex flex-wrap space-x-1 justify-center text-[#4F46E5] ">
           {title.map((char, i) => (
             <motion.span
               key={i}
@@ -88,7 +88,7 @@ export default function HeroMobile() {
         </h1>
 
         {/* Subtitle */}
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mt-4 flex flex-wrap justify-center max-w-4xl leading-tight">
+        <h2 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl font-bold mt-4 flex flex-wrap justify-center max-w-4xl leading-tight">
           {subtitle.map((char, i) => (
             <motion.span
               key={i}
@@ -103,7 +103,7 @@ export default function HeroMobile() {
         </h2>
 
         {/* Paragraph */}
-        <p className="text-sm sm:text-base md:text-lg mt-4 max-w-2xl leading-relaxed text-gray-700 flex flex-wrap justify-center px-2">
+        <p className="text-lg sm:text-base md:text-lg mt-4 max-w-2xl leading-relaxed text-gray-700 flex flex-wrap justify-center px-2">
           {paragraphWords.map((word, i) => (
             <motion.span
               key={i}
